@@ -7,7 +7,13 @@ To compile simply run
 
 
 
-Usage:  ./raw <target> <connection_name> <target6>
+Usage:  ./raw target connection_name target6 
+
+
+- target : IPv4 target
+- connection_name: NIC (en0,eth0,docker0,etc...)
+- target6: IPv6 address to relay IPv4 src packets, if empty it is collected from the network (might take some time)
+  
 
 It requires super user to permissions to read/write raw sockets.
 
